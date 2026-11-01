@@ -83,6 +83,10 @@
     params.append('nome', data.nome.trim());
     params.append('whatsapp', digitsOnly(data.whatsapp));
     params.append('email', data.email.trim());
+    params.append('cidade', '');
+    params.append('queixa', '');
+    params.append('detalhe', '');
+    params.append('consentimento_saude', 'Nao');
     params.append('consentimento', data.consentimento ? 'Sim' : 'Nao');
     params.append('origem', cfg.origem || 'lp-ebook-ortobiologicos');
     params.append('website', data.website || '');
